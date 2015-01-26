@@ -11,16 +11,30 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Linear Regression
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+Linear Regression is a great technique for initial exploration into the world of predictive modeling.
 
 --- .class #id 
 
-## Slide 2
+## Small Datasets
 
+Small datasets are much easier to work with and therefore more appropriate for the beginner.
 
+--- .class #id
 
+## Formula Exploration
 
+It's often difficult to see the changing effects of different formulas used in the model. 
+
+--- .class #id
+
+## Immediate Feedback
+
+Therefore, we use a Shiny app to show immediate feedback of different predictor variables selected for use in the model.
+
+--- .class #id
+
+## Visual and Numeric Display
+
+Quantile plots as well as model diagnostics are shown.
