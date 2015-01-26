@@ -19,7 +19,14 @@ Linear Regression is a great technique for initial exploration into the world of
 
 ## Small Datasets
 
-Small datasets are much easier to work with and therefore more appropriate for the beginner.
+Small datasets are much easier to work with and therefore more appropriate for the beginner. For instance, we can quickly run a linear regression on the mtcars dataset right in this presentation!
+
+```{r}
+library(datasets)
+data(mtcars)
+fit <- lm(mpg ~ wt, data=mtcars)
+summary(fit)
+```
 
 --- .class #id
 

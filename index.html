@@ -57,7 +57,33 @@
     <h2>Small Datasets</h2>
   </hgroup>
   <article data-timings="">
-    <p>Small datasets are much easier to work with and therefore more appropriate for the beginner.</p>
+    <p>Small datasets are much easier to work with and therefore more appropriate for the beginner. For instance, we can quickly run a linear regression on the mtcars dataset right in this presentation!</p>
+
+<pre><code class="r">library(datasets)
+data(mtcars)
+fit &lt;- lm(mpg ~ wt, data=mtcars)
+summary(fit)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.5432 -2.3647 -0.1252  1.4096  6.8727 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+## wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.046 on 30 degrees of freedom
+## Multiple R-squared:  0.7528, Adjusted R-squared:  0.7446 
+## F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
